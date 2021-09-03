@@ -48,7 +48,7 @@ local UICorner_18 = Instance.new("UICorner")
 --Properties:
 
 TannyHub.Name = "TannyHub"
-TannyHub.Parent = game.CoreGui
+TannyHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 TannyHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 TannyHub.ResetOnSpawn = false
 
@@ -58,6 +58,7 @@ BG.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 BG.BorderSizePixel = 0
 BG.Position = UDim2.new(0.00612277072, 0, 0.0153244287, 0)
 BG.Size = UDim2.new(0.381402642, 0, 0.651408434, 0)
+BG.Visible = false
 BG.ZIndex = 5
 
 UICorner.Parent = BG
@@ -313,7 +314,7 @@ UICorner_18.Parent = ImageLabel_2
 
 -- Scripts:
 
-local function HABA_fake_script() -- Meteor.LocalScript 
+local function XHMAOZR_fake_script() -- Meteor.LocalScript 
 	local script = Instance.new('LocalScript', Meteor)
 
 	local On = false
@@ -403,8 +404,8 @@ local function HABA_fake_script() -- Meteor.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(HABA_fake_script)()
-local function KAXEE_fake_script() -- Chest.LocalScript 
+coroutine.wrap(XHMAOZR_fake_script)()
+local function CTLV_fake_script() -- Chest.LocalScript 
 	local script = Instance.new('LocalScript', Chest)
 
 	local On = false
@@ -649,24 +650,63 @@ local function KAXEE_fake_script() -- Chest.LocalScript
 			On = true
 		elseif On == true then
 			script.Parent.Parent.ChWh:TweenPosition(UDim2.new(0.789, 0,0.263, 0),"Out",Enum.EasingStyle.Quad,.2,true)
-			On = false
-			
 			for i,v in pairs(game.Workspace:GetDescendants()) do
 				if v.Name == "AlrIn" then
-					if	v.Parent.Head:FindFirstChild("Hp") then
+					if v.Parent.Head:FindFirstChild("Hp") then
 						v.Parent.Head.Hp:Destroy()
 					end
 					v:Destroy()
 				end
 			end
 			game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
-			
+			On = false
 		end	
 	end)
 	
+	game.Workspace.Status.TWins.Changed:Connect(function()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == "AlrIn" then
+				if v.Parent.Head:FindFirstChild("Hp") then
+					v.Parent.Head.Hp:Destroy()
+				end
+				v:Destroy()
+			end
+		end
+		game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
+		
+		CreateFrame()
+		for i,v in pairs(game.workspace:GetChildren()) do
+			if v:FindFirstChild("Humanoid") then
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					KenActive(v)	
+				end
+			end	
+		end
+	end)
+	game.Workspace.Status.CTWins.Changed:Connect(function()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == "AlrIn" then
+				if v.Parent.Head:FindFirstChild("Hp") then
+					v.Parent.Head.Hp:Destroy()
+				end
+				v:Destroy()
+			end
+		end
+		game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
+	
+		CreateFrame()
+		for i,v in pairs(game.workspace:GetChildren()) do
+			if v:FindFirstChild("Humanoid") then
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					KenActive(v)	
+				end
+			end	
+		end
+	end)
+	
 end
-coroutine.wrap(KAXEE_fake_script)()
-local function TYCGT_fake_script() -- AutoFarm.LocalScript 
+coroutine.wrap(CTLV_fake_script)()
+local function SWODJHR_fake_script() -- AutoFarm.LocalScript 
 	local script = Instance.new('LocalScript', AutoFarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -674,8 +714,8 @@ local function TYCGT_fake_script() -- AutoFarm.LocalScript
 		script.Parent.Parent.Parent.SecOpItem.Visible = false
 	end)
 end
-coroutine.wrap(TYCGT_fake_script)()
-local function PPKXXM_fake_script() -- BG.LocalScript 
+coroutine.wrap(SWODJHR_fake_script)()
+local function OLCS_fake_script() -- BG.LocalScript 
 	local script = Instance.new('LocalScript', BG)
 
 	local Click = false
@@ -706,8 +746,8 @@ local function PPKXXM_fake_script() -- BG.LocalScript
 	
 	
 end
-coroutine.wrap(PPKXXM_fake_script)()
-local function IYBHZ_fake_script() -- BG.LocalScript 
+coroutine.wrap(OLCS_fake_script)()
+local function NDIQQPS_fake_script() -- BG.LocalScript 
 	local script = Instance.new('LocalScript', BG)
 
 	_G.Login = true
@@ -720,17 +760,16 @@ local function IYBHZ_fake_script() -- BG.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IYBHZ_fake_script)()
-local function UYIC_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NDIQQPS_fake_script)()
+local function OUVIIGM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		print("Click")
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/w1ndytannyhub/AUT/main/Check"), true))()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/w1ndytannyhub/AUT/main/Check2"), true))()
 	end)
 end
-coroutine.wrap(UYIC_fake_script)()
-local function KQSSLBC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(OUVIIGM_fake_script)()
+local function ZXVHC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Click = false
@@ -761,4 +800,4 @@ local function KQSSLBC_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(KQSSLBC_fake_script)()
+coroutine.wrap(ZXVHC_fake_script)()

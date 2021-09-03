@@ -1,0 +1,763 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TannyHub = Instance.new("ScreenGui")
+local BG = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SecOp = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local MeWh = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ChWh = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Meteor = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Chest = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local Titel = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Sec = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local AutoFarm = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_13 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_18 = Instance.new("UICorner")
+
+--Properties:
+
+TannyHub.Name = "TannyHub"
+TannyHub.Parent = game.CoreGui
+TannyHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TannyHub.ResetOnSpawn = false
+
+BG.Name = "BG"
+BG.Parent = TannyHub
+BG.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+BG.BorderSizePixel = 0
+BG.Position = UDim2.new(0.00612277072, 0, 0.0153244287, 0)
+BG.Size = UDim2.new(0.381402642, 0, 0.651408434, 0)
+BG.ZIndex = 5
+
+UICorner.Parent = BG
+
+SecOp.Name = "SecOp"
+SecOp.Parent = BG
+SecOp.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SecOp.BorderSizePixel = 0
+SecOp.Position = UDim2.new(0.225206703, 0, 0.143243283, 0)
+SecOp.Size = UDim2.new(0.743801594, 0, 0.816216111, 0)
+SecOp.ZIndex = 5
+
+TextLabel.Parent = SecOp
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0250000004, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.191666663, 0, 0.0794702098, 0)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "Function"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = SecOp
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextLabel_2.Position = UDim2.new(0.0250000004, 0, 0.244553089, 0)
+TextLabel_2.Size = UDim2.new(0.949999988, 0, 0.110463589, 0)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "ESP"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = TextLabel_2
+
+TextLabel_3.Parent = SecOp
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TextLabel_3.Position = UDim2.new(0.0250000004, 0, 0.11258278, 0)
+TextLabel_3.Size = UDim2.new(0.949999988, 0, 0.110463589, 0)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "Aim Bot"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_3.Parent = TextLabel_3
+
+MeWh.Name = "MeWh"
+MeWh.Parent = SecOp
+MeWh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MeWh.Position = UDim2.new(0.788888812, 0, 0.12913917, 0)
+MeWh.Size = UDim2.new(0.088888891, 0, 0.0735099763, 0)
+MeWh.ZIndex = 2
+MeWh.Font = Enum.Font.ArialBold
+MeWh.Text = ""
+MeWh.TextColor3 = Color3.fromRGB(0, 0, 0)
+MeWh.TextSize = 14.000
+
+UICorner_4.Parent = MeWh
+
+ChWh.Name = "ChWh"
+ChWh.Parent = SecOp
+ChWh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChWh.Position = UDim2.new(0.788888812, 0, 0.260259211, 0)
+ChWh.Size = UDim2.new(0.088888891, 0, 0.0735099763, 0)
+ChWh.ZIndex = 2
+ChWh.Font = Enum.Font.ArialBold
+ChWh.Text = ""
+ChWh.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChWh.TextSize = 14.000
+
+UICorner_5.Parent = ChWh
+
+Meteor.Name = "Meteor"
+Meteor.Parent = SecOp
+Meteor.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Meteor.Position = UDim2.new(0.788888872, 0, 0.129139155, 0)
+Meteor.Size = UDim2.new(0.166666672, 0, 0.0735099316, 0)
+Meteor.Font = Enum.Font.ArialBold
+Meteor.Text = ""
+Meteor.TextColor3 = Color3.fromRGB(0, 0, 0)
+Meteor.TextSize = 14.000
+
+UICorner_6.Parent = Meteor
+
+Chest.Name = "Chest"
+Chest.Parent = SecOp
+Chest.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Chest.Position = UDim2.new(0.788888872, 0, 0.262996852, 0)
+Chest.Size = UDim2.new(0.166666672, 0, 0.0735099316, 0)
+Chest.Font = Enum.Font.ArialBold
+Chest.Text = ""
+Chest.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest.TextSize = 14.000
+
+UICorner_7.Parent = Chest
+
+UICorner_8.Parent = SecOp
+
+Titel.Name = "Titel"
+Titel.Parent = BG
+Titel.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Titel.BorderSizePixel = 0
+Titel.Position = UDim2.new(-3.15264259e-08, 0, 0, 0)
+Titel.Size = UDim2.new(1, 0, 0.1027027, 0)
+Titel.ZIndex = 5
+
+UICorner_9.Parent = Titel
+
+TextLabel_4.Parent = Titel
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0185950436, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.98140496, 0, 1, 0)
+TextLabel_4.Font = Enum.Font.ArialBold
+TextLabel_4.Text = "Swa Hub | Counter Blox"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_5.Parent = Titel
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 179, 0)
+TextLabel_5.Position = UDim2.new(0.102428824, 0, 0.152302235, 0)
+TextLabel_5.Size = UDim2.new(0.0959181935, 0, 0.673638284, 0)
+TextLabel_5.ZIndex = 0
+TextLabel_5.Font = Enum.Font.ArialBold
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextWrapped = true
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_10.Parent = TextLabel_5
+
+Sec.Name = "Sec"
+Sec.Parent = BG
+Sec.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Sec.BorderSizePixel = 0
+Sec.Position = UDim2.new(1.5763213e-08, 0, 0.1027027, 0)
+Sec.Size = UDim2.new(0.198346972, 0, 0.897297323, 0)
+Sec.ZIndex = 5
+
+UICorner_11.Parent = Sec
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Sec
+AutoFarm.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0, 0, 0.021084344, 0)
+AutoFarm.Size = UDim2.new(1, 0, 0.0963855386, 0)
+AutoFarm.Font = Enum.Font.ArialBold
+AutoFarm.Text = "Function"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextSize = 18.000
+AutoFarm.TextWrapped = true
+
+UICorner_12.Parent = AutoFarm
+
+ImageLabel.Parent = BG
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.ZIndex = 6
+ImageLabel.Image = "rbxassetid://7388258756"
+ImageLabel.ImageTransparency = 0.950
+
+UICorner_13.Parent = ImageLabel
+
+Frame.Parent = TannyHub
+Frame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Frame.Position = UDim2.new(0.371810347, 0, 0.334312499, 0)
+Frame.Size = UDim2.new(0.256118804, 0, 0.466382295, 0)
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.053057909, 0)
+TextLabel_6.Size = UDim2.new(1.00000024, 0, 0.174733087, 0)
+TextLabel_6.Font = Enum.Font.ArialBold
+TextLabel_6.Text = "Swa Hub"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 30.000
+TextLabel_6.TextWrapped = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextBox.BackgroundTransparency = 0.200
+TextBox.Position = UDim2.new(0.179940999, 0, 0.426838189, 0)
+TextBox.Size = UDim2.new(0.639822662, 0, 0.142704606, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.ArialBold
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_14.Parent = TextBox
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextButton.BackgroundTransparency = 0.200
+TextButton.Position = UDim2.new(0.256637156, 0, 0.759664536, 0)
+TextButton.Size = UDim2.new(0.486430436, 0, 0.164056927, 0)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "Login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_15.Parent = TextButton
+
+UICorner_16.Parent = Frame
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.29481405, 0, 0.243040413, 0)
+TextLabel_7.Size = UDim2.new(0.404130101, 0, 0.0964412093, 0)
+TextLabel_7.Font = Enum.Font.ArialBold
+TextLabel_7.Text = "Login"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 30.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 179, 0)
+TextLabel_8.Position = UDim2.new(0.514169753, 0, 0.0700579286, 0)
+TextLabel_8.Size = UDim2.new(0.184774429, 0, 0.129407749, 0)
+TextLabel_8.ZIndex = 0
+TextLabel_8.Font = Enum.Font.ArialBold
+TextLabel_8.Text = ""
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 30.000
+TextLabel_8.TextWrapped = true
+
+UICorner_17.Parent = TextLabel_8
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_2.ZIndex = -1
+ImageLabel_2.Image = "rbxassetid://7388244591"
+ImageLabel_2.ImageTransparency = 0.900
+
+UICorner_18.Parent = ImageLabel_2
+
+-- Scripts:
+
+local function HABA_fake_script() -- Meteor.LocalScript 
+	local script = Instance.new('LocalScript', Meteor)
+
+	local On = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.Login == false then
+			game.Players.LocalPlayer:Kick("L O G I N")	
+		end
+		if On == false then
+			script.Parent.Parent.MeWh:TweenPosition(UDim2.new(0.867, 0,0.129, 0),"Out",Enum.EasingStyle.Quad,.2,true)
+			On = true
+		elseif On == true then
+			script.Parent.Parent.MeWh:TweenPosition(UDim2.new(0.789, 0,0.129, 0),"Out",Enum.EasingStyle.Quad,.2,true)
+			On = false
+		end	
+	end)
+	
+	spawn(function()
+		local Player = game.Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+	
+		local function WallCheck(target)
+			local ray = Ray.new(Player.Character.Head.Position,(target.Position - Player.Character.Head.Position).Unit*300)
+			local part,position = game:GetService("Workspace"):FindPartOnRayWithIgnoreList(ray,{Player.Character},false,true)
+			if part then
+				local Hum = part.Parent:FindFirstChild("Humanoid")
+				if not Hum then
+					Hum = part.Parent.Parent:FindFirstChild("Humanoid")
+				end
+	
+				if Hum and target and Hum.Parent == target.Parent  then
+					local pos,visible = game.Workspace.Camera:WorldToScreenPoint(target.Position)
+					if visible then
+						return true
+					end
+				end
+			end
+		end
+	
+		local function CloseMousePlayer()
+			local Dist = 300
+			local People = nil
+			for i,v in pairs(game.Workspace:GetChildren()) do
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					local Hum = v:FindFirstChild("Humanoid")
+					if Hum and Hum.Parent:FindFirstChild("Head") and Hum.Health > 0  then
+						if (Vector2.new(Mouse.Hit.p.X,Mouse.Hit.p.Y) - Vector2.new(Hum.Parent.Head.Position.X,Hum.Parent.Head.Position.Y)).Magnitude <= Dist then
+							if WallCheck(v.Head) then
+								Dist = (Vector2.new(Mouse.Hit.p.X,Mouse.Hit.p.Y) - Vector2.new(Hum.Parent.Head.Position.X,Hum.Parent.Head.Position.Y)).Magnitude
+								People = v.Name
+							end	
+						end
+					end
+				end
+			end
+			return People
+		end
+	
+		local function ClosePlayer()
+			local Dist = math.huge
+			local People = nil
+			for i,v in pairs(game.workspace:GetChildren()) do
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					local Hum = v:FindFirstChild("Humanoid")
+					if Hum and Hum.Parent:FindFirstChild("Head") and Hum.Health > 0  then
+						if (game.Players.LocalPlayer.Character.Head.Position - Hum.Parent.Head.Position).Magnitude <= Dist then
+							if WallCheck(v.Head) then
+								Dist = (game.Players.LocalPlayer.Character.Head.Position - Hum.Parent.Head.Position).Magnitude
+								People = v.Name
+							end	
+						end
+					end
+				end
+			end	
+			return People
+		end
+	
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if On == false  then return end
+			if ClosePlayer() ~= nil then
+				if game.Players:FindFirstChild(ClosePlayer()).Status.Team.Value == game.Players.LocalPlayer.Status.Team.Value then return end
+				local TargetName = game.Workspace:FindFirstChild(ClosePlayer())
+				if TargetName then
+					game.Workspace.Camera.CFrame = CFrame.new(game.Workspace.Camera.CFrame.Position,TargetName.Head.Position)
+				end
+			end	
+		end)
+	end)
+end
+coroutine.wrap(HABA_fake_script)()
+local function KAXEE_fake_script() -- Chest.LocalScript 
+	local script = Instance.new('LocalScript', Chest)
+
+	local On = false
+	local Position = nil
+	local Player = game.Players.LocalPlayer
+	local function CheckObj(obj)
+		for i ,v in pairs(obj:GetDescendants()) do
+			if obj:IsA("BasePart") or obj:IsA("MeshPart") or obj:IsA("Part") and obj.Name ~= "HumanoidRootPart" then
+				return true	
+			end
+		end
+	end
+	
+	local function DeleteViewChar(Obj)
+		if Player.PlayerGui:FindFirstChild("KenGui") then
+			if Player.PlayerGui:FindFirstChild("KenGui").ViewportFrame:FindFirstChild(Obj.Name) then
+				Player.PlayerGui:FindFirstChild("KenGui").ViewportFrame:FindFirstChild(Obj.Name):Destroy()
+			end
+		end
+	end
+	
+	local function CloseFrame(ActStat)
+		if Player.PlayerGui:FindFirstChild("KenGui") then
+			local Frame = Player.PlayerGui:FindFirstChild("KenGui").ViewportFrame
+			for i,v in pairs(workspace:GetChildren()) do
+				if v:FindFirstChildOfClass("Humanoid") then
+					if v.Name ~= Player.Name and ActStat == false then
+						if v:FindFirstChildOfClass("Humanoid"):FindFirstChild("CanBeSeen")and v:FindFirstChild("AlrIn") then 
+							v:FindFirstChildOfClass("Humanoid"):FindFirstChild("CanBeSeen"):Destroy()
+							v:FindFirstChild("AlrIn"):Destroy()
+						end
+					end
+				end
+			end
+			for i ,v in pairs(Frame:GetChildren()) do
+				v:Destroy()
+			end
+			wait()	
+			game:GetService("TweenService"):Create(Frame,TweenInfo.new(0.5),{ImageTransparency = 1}):Play()	
+			spawn(function()
+			end)
+			wait(0.5)
+			Player.PlayerGui:FindFirstChild("KenGui"):Destroy()
+		end
+	end
+	
+	local function CreateFrame()
+		local KenGui = Instance.new("ScreenGui")
+		KenGui.Name = "KenGui"
+		KenGui.Parent = Player:WaitForChild("PlayerGui")
+		KenGui.IgnoreGuiInset = true
+		local Frame = Instance.new("ViewportFrame",KenGui)
+		Frame.BorderSizePixel = 0
+		Frame.Size = UDim2.new(1,0,1)
+		Frame.LightColor = Color3.fromRGB(255, 0, 0)
+		Frame.ImageColor3 = Color3.fromRGB(255, 0, 0)
+		Frame.BackgroundTransparency = 1
+		Frame.ZIndex = 4
+		Frame.ImageTransparency = 1
+		Frame.CurrentCamera = game.Workspace.CurrentCamera
+		local Frame2 = Instance.new("ViewportFrame",KenGui)
+		Frame2.Name = "Frame2"
+		Frame2.BorderSizePixel = 0
+		Frame2.Size = UDim2.new(1,0,1)
+		Frame2.LightColor = Color3.fromRGB(255, 0, 0)
+		Frame2.ImageColor3 = Color3.fromRGB(0,0,255)
+		Frame2.BackgroundTransparency = 1
+		Frame2.ZIndex = 4
+		Frame2.ImageTransparency = 1
+		Frame2.CurrentCamera = game.Workspace.CurrentCamera
+		game:GetService("TweenService"):Create(Frame2,TweenInfo.new(0.5),{ImageTransparency = 0.5}):Play()
+		game:GetService("TweenService"):Create(Frame,TweenInfo.new(0.5),{ImageTransparency = 0.5}):Play()
+	end
+	
+	local function KenActive(obj)
+		for i,v in pairs(obj:GetChildren()) do
+			if not obj:FindFirstChild("AlrIn") then
+				if CheckObj(v) then
+					obj.Archivable = true
+					local PlrClone = obj:Clone()
+					if PlrClone and game.Players:FindFirstChild(obj.Name).Status.Team.Value ~= game.Players.LocalPlayer.Status.Team.Value  then
+						PlrClone.Parent = Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("ViewportFrame")
+	
+						for i,v in pairs(PlrClone:GetChildren()) do
+							if v:IsA("Accessory") then
+								v:Destroy()
+							end
+						end
+	
+						for i,v in pairs(PlrClone:GetDescendants()) do
+							if v.Name == "Gun" then
+								v:Destroy()
+	
+							end
+						end
+						for i,v in pairs(PlrClone:GetChildren()) do
+							if v:IsA("BasePart") then
+								local a = Instance.new("WeldConstraint",v)
+								a.Part0 = v
+								a.Part1 = v.Parent.HumanoidRootPart
+								v.Anchored = true
+							end
+						end
+	
+						spawn(function()
+							local Bilbord = Instance.new("BillboardGui",obj.Head)
+							Bilbord.AlwaysOnTop = true
+							Bilbord.Size = UDim2.new(10,0,5,0) --(0, 100,0, 20)
+							Bilbord.SizeOffset = Vector2.new(0,.5)
+							Bilbord.Name = "Hp"
+							local Text = Instance.new("TextLabel",Bilbord)
+							game:GetService("RunService").RenderStepped:Connect(function()	
+								if On == true  then
+									Text.Text = obj.Name.." : HP"..obj.Humanoid.Health
+								end		
+							end)	
+							Text.Size = UDim2.new(1,0,1,0)
+							Text.BackgroundTransparency = 1
+							Text.TextStrokeTransparency = .6
+							Text.TextColor3 = Color3.fromRGB(0,255,0)
+						end)
+	
+	
+	
+						obj:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+							PlrClone:Destroy()
+						end)
+						if game.Players:GetPlayerFromCharacter(obj) then
+							local PlayerObj = game.Players:GetPlayerFromCharacter(obj)					
+							game.Players.PlayerRemoving:Connect(function(PlayerOut)	
+								if Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("ViewportFrame"):FindFirstChild(PlayerOut.Name) then
+									Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("ViewportFrame"):FindFirstChild(PlayerOut.Name):Destroy()
+								end
+							end)
+						end	
+						game:GetService("RunService").RenderStepped:Connect(function()
+							for m,PlrParts in pairs(PlrClone:GetDescendants()) do
+								if CheckObj(PlrParts)then
+									if PlrParts ~= v.Parent:FindFirstChild(PlrParts.Name) and PlrParts.Name == "Handle" then
+										local SpecialClass = v.Parent:FindFirstChild(PlrParts.Parent.Name)
+										PlrParts.CFrame = SpecialClass:FindFirstChild("Handle").CFrame
+									else	
+										PlrParts.CFrame = v.Parent:FindFirstChild(PlrParts.Name).CFrame		
+									end	
+								end
+							end
+						end)
+	
+					elseif PlrClone and game.Players:FindFirstChild(obj.Name).Status.Team.Value == game.Players.LocalPlayer.Status.Team.Value  then
+						PlrClone.Parent = Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("Frame2")
+	
+						for i,v in pairs(PlrClone:GetChildren()) do
+							if v:IsA("Accessory") then
+								v:Destroy()
+							end
+						end
+	
+						for i,v in pairs(PlrClone:GetDescendants()) do
+							if v.Name == "Gun" then
+								v:Destroy()
+	
+							end
+						end
+						for i,v in pairs(PlrClone:GetChildren()) do
+							if v:IsA("BasePart") then
+								local a = Instance.new("WeldConstraint",v)
+								a.Part0 = v
+								a.Part1 = v.Parent.HumanoidRootPart
+								v.Anchored = true
+							end
+						end
+	
+						obj:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+							PlrClone:Destroy()
+						end)
+	
+	
+	
+						spawn(function()
+							local Bilbord = Instance.new("BillboardGui",obj.Head)
+							Bilbord.AlwaysOnTop = true
+							Bilbord.Size = UDim2.new(10,0,5,0) --(0, 100,0, 20)
+							Bilbord.SizeOffset = Vector2.new(0,.5)
+							Bilbord.Name = "Hp"
+							local Text = Instance.new("TextLabel",Bilbord)
+							game:GetService("RunService").RenderStepped:Connect(function()	
+								if On == true  then
+									Text.Text = obj.Name.." : HP"..math.floor(obj.Humanoid.Health)
+								end		
+							end)	
+							Text.Size = UDim2.new(1,0,1,0)
+							Text.BackgroundTransparency = 1
+							Text.TextStrokeTransparency = .6
+							Text.TextColor3 = Color3.fromRGB(0,255,0)
+						end)
+	
+	
+						if game.Players:GetPlayerFromCharacter(obj) then
+							local PlayerObj = game.Players:GetPlayerFromCharacter(obj)
+							game.Players.PlayerRemoving:Connect(function(PlayerOut)	
+								if Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("Frame2"):FindFirstChild(PlayerOut.Name) then
+									Player.PlayerGui:FindFirstChild("KenGui"):FindFirstChild("Frame2"):FindFirstChild(PlayerOut.Name):Destroy()
+								end
+							end)
+						end	
+						game:GetService("RunService").RenderStepped:Connect(function()
+							for m,PlrParts in pairs(PlrClone:GetDescendants()) do
+								if CheckObj(PlrParts)then
+									if PlrParts ~= v.Parent:FindFirstChild(PlrParts.Name) and PlrParts.Name == "Handle" then
+										local SpecialClass = v.Parent:FindFirstChild(PlrParts.Parent.Name)
+										PlrParts.CFrame = SpecialClass:FindFirstChild("Handle").CFrame
+									else	
+										PlrParts.CFrame = v.Parent:FindFirstChild(PlrParts.Name).CFrame		
+									end	
+								end
+							end
+						end)
+					end
+					local ALrInVal = Instance.new("BoolValue")
+					ALrInVal.Parent = obj
+					ALrInVal.Name = "AlrIn"
+				end
+			end
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.Login == false then
+			game.Players.LocalPlayer:Kick("L O G I N")	
+		end
+		if On == false then
+			script.Parent.Parent.ChWh:TweenPosition(UDim2.new(0.865, 0,0.263, 0),"Out",Enum.EasingStyle.Quad,.2,true)
+			CreateFrame()
+			for i,v in pairs(game.workspace:GetChildren()) do
+				if v:FindFirstChild("Humanoid") then
+					if v.Name ~= game.Players.LocalPlayer.Name then
+						KenActive(v)	
+					end
+				end	
+			end
+			On = true
+		elseif On == true then
+			script.Parent.Parent.ChWh:TweenPosition(UDim2.new(0.789, 0,0.263, 0),"Out",Enum.EasingStyle.Quad,.2,true)
+			On = false
+			
+			for i,v in pairs(game.Workspace:GetDescendants()) do
+				if v.Name == "AlrIn" then
+					if	v.Parent.Head:FindFirstChild("Hp") then
+						v.Parent.Head.Hp:Destroy()
+					end
+					v:Destroy()
+				end
+			end
+			game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
+			
+		end	
+	end)
+	
+end
+coroutine.wrap(KAXEE_fake_script)()
+local function TYCGT_fake_script() -- AutoFarm.LocalScript 
+	local script = Instance.new('LocalScript', AutoFarm)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.SecOp.Visible = true
+		script.Parent.Parent.Parent.SecOpItem.Visible = false
+	end)
+end
+coroutine.wrap(TYCGT_fake_script)()
+local function PPKXXM_fake_script() -- BG.LocalScript 
+	local script = Instance.new('LocalScript', BG)
+
+	local Click = false
+	local Pos = nil
+	local FP = nil
+	local Frame = script.Parent
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	Frame.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			Click = true
+			Pos = Vector2.new(i.Position.X,i.Position.Y)
+			FP = Vector2.new(Frame.Position.X.Scale,Frame.Position.Y.Scale)
+		end
+	end)
+	
+	Frame.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			Click = false
+		end
+	end)
+	
+	game.Players.LocalPlayer:GetMouse().Move:Connect(function()
+		if Click == true then
+			local Nw = FP + ((Vector2.new(Mouse.X,Mouse.Y) - Pos ) / game.Workspace.Camera.ViewportSize)
+			Frame.Position = UDim2.new(Nw.X,0,Nw.Y,0)
+		end
+	end)
+	
+	
+end
+coroutine.wrap(PPKXXM_fake_script)()
+local function IYBHZ_fake_script() -- BG.LocalScript 
+	local script = Instance.new('LocalScript', BG)
+
+	_G.Login = true
+	local player = game.Players.LocalPlayer
+	game:GetService("UserInputService").InputBegan:Connect(function(i,c)
+		if not c then
+			if i.KeyCode == Enum.KeyCode.RightControl and _G.Login == true then
+				script.Parent.Visible = not script.Parent.Visible
+			end
+		end
+	end)
+end
+coroutine.wrap(IYBHZ_fake_script)()
+local function UYIC_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/w1ndytannyhub/AUT/main/Check2"), true))()
+	end)
+end
+coroutine.wrap(UYIC_fake_script)()
+local function KQSSLBC_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Click = false
+	local Pos = nil
+	local FP = nil
+	local Frame = script.Parent
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	Frame.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			Click = true
+			Pos = Vector2.new(i.Position.X,i.Position.Y)
+			FP = Vector2.new(Frame.Position.X.Scale,Frame.Position.Y.Scale)
+		end
+	end)
+	
+	Frame.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			Click = false
+		end
+	end)
+	
+	game.Players.LocalPlayer:GetMouse().Move:Connect(function()
+		if Click == true then
+			local Nw = FP + ((Vector2.new(Mouse.X,Mouse.Y) - Pos ) / game.Workspace.Camera.ViewportSize)
+			Frame.Position = UDim2.new(Nw.X,0,Nw.Y,0)
+		end
+	end)
+	
+	
+end
+coroutine.wrap(KQSSLBC_fake_script)()

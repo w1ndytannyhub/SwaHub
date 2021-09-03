@@ -662,52 +662,6 @@ local function WCFXGUK_fake_script() -- Chest.LocalScript
 			On = false
 		end	
 	end)
-	
-	game.Workspace.Status.TWins.Changed:Connect(function()
-		if On == true then
-		for i,v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == "AlrIn" then
-				if v.Parent.Head:FindFirstChild("Hp") then
-					v.Parent.Head.Hp:Destroy()
-				end
-				v:Destroy()
-			end
-		end
-		game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
-		
-		CreateFrame()
-		for i,v in pairs(game.workspace:GetChildren()) do
-			if v:FindFirstChild("Humanoid") then
-				if v.Name ~= game.Players.LocalPlayer.Name then
-					KenActive(v)	
-				end
-			end	
-			end
-		end	
-	end)
-	game.Workspace.Status.CTWins.Changed:Connect(function()
-		if On == true then
-		for i,v in pairs(game.Workspace:GetDescendants()) do
-			if v.Name == "AlrIn" then
-				if v.Parent.Head:FindFirstChild("Hp") then
-					v.Parent.Head.Hp:Destroy()
-				end
-				v:Destroy()
-			end
-		end
-		game.Players.LocalPlayer.PlayerGui:FindFirstChild("KenGui"):Destroy()
-	
-		CreateFrame()
-		for i,v in pairs(game.workspace:GetChildren()) do
-			if v:FindFirstChild("Humanoid") then
-				if v.Name ~= game.Players.LocalPlayer.Name then
-					KenActive(v)	
-				end
-				end	
-			end	
-		end
-	end)
-	
 end
 coroutine.wrap(WCFXGUK_fake_script)()
 local function OVXZGDA_fake_script() -- AutoFarm.LocalScript 
